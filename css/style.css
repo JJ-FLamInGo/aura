@@ -1,0 +1,329 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+:root {
+	--linear-color: linear-gradient(180deg, #46F4DB 27.08%, #57D272 100%);
+	--primary-color: #46f4DB;
+}
+a {
+  background-color: transparent;
+	text-decoration: none;
+	color: inherit;
+}
+
+img, button {
+  border-style: none;
+}
+
+ul {
+	list-style: none;
+}
+
+.container {
+  max-width: 1310px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.section-title {
+  font-family: "Russo One", sans-serif;
+  font-size: 60px;
+}
+
+body {
+  font-family: "Mulish", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+	color: #07060B;
+}
+.lnk {
+	padding: 17.5px 25px;
+	transition: 0.4s ease;
+	border-radius: 40px;
+}
+.btn {
+  padding: 25px 54px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: "Mulish", sans-serif;
+  color: #07060B;
+  background-color: var(--primary-color);
+  border-radius: 40px;
+	font-weight: 700;
+  width: 296px;
+  height: 70px;
+}
+
+/* -----HEADER--------------------------------- */
+.header__inner {
+	height: 80px;
+  display: flex;
+	padding: 15px 0;
+	align-items: center;
+}
+.menu {
+	margin-left: 64px;
+	display: flex;
+	align-items: center;
+}
+.menu__list {
+  display: flex;
+	gap: 32px;
+}
+
+.menu__list-link {
+	transition: color 0.3s ease;
+}
+.menu__list-link:hover {
+	color: var(--primary-color);
+	transition: color 0.3s ease;
+}
+.menu__list-link:active {
+	color: #57D272;
+}
+.header__link {
+	margin-left: auto;
+	color: #fff;
+	font-size: 16px;
+	background-color: #07060b;
+	padding: 17px 43px;
+	border-radius: 77px;
+	width: 132px;
+	display: flex;
+	text-align: center;
+	justify-content: center;
+}
+/* ---HEADER-TOP----------------------------------- */
+.header-top {
+	padding: 160px 0;
+	background-color: #07060b;
+	background-image: url(../image/header-top/stickers_hero.png);
+	background-repeat: no-repeat;
+	background-position: right;
+}
+.header-top__title {
+	margin-bottom: 35px;
+	max-width: 621px;
+	color: #fff;
+	font-family: "Russo One", sans-serif;
+	font-size: 70px;
+	font-weight: 400;
+}
+.header-top__btn {
+	height: 70px;
+	padding: 25px 54px;
+	margin-right: 32px;
+	border-radius: 40px;
+	background: var(--linear-color);
+	color: #07060B;
+	font-family: "Mulish", sans-serif;
+	font-size: 20px;
+	font-weight: 700;
+	cursor: pointer;
+	line-height: 20px;
+}
+.header-top__btn:hover {
+	background: var(--primary-color);
+}
+.header-top__link {
+	border: 5px solid var(--primary-color);
+	color: #fff;
+}
+.header-top__link:hover {
+	background: var(--primary-color);
+	color: #07060B;
+}
+/* ----HEADER-BOTTOM---------------------------------- */
+.auction {
+	margin: 90px 0;
+}
+.auction__inner {
+}
+.auction__top {
+	display: flex;
+}
+.auction__top-title {
+	margin-right: 16px;
+}
+.auction__top-status {
+	padding-left: 6px;
+	font-size: 16px;
+	text-align: center;
+	width: 135px;
+	height: 36px;
+	border-radius: 40px;
+	border: 2px solid #D13130;
+	color: #D13130;
+	line-height: 30px;
+	margin: auto 0;
+	position: relative;
+}
+.auction__top-status::after {
+	content: '';
+	position: absolute;
+	width: 6px;
+	height: 6px;
+	border-radius: 50%;
+	background-color: #D13130;
+	left: 12px;
+	top: 13px;
+}
+.auction__bottom {
+	margin-top: 32px;
+	display: flex;
+	width: 100%;
+}
+.auction__bottom-lot {
+	width: 480px;
+	height: 480px;
+	margin-right: 32px;
+}
+
+.auction__bottom-user {
+	display: flex;
+	align-items: center;
+	background-color: #EDEDF2;
+	gap: 16px;
+	border-radius: 23px;
+	padding: 11px 16px;
+	max-width: 228px;
+}
+.auction__bottom-name {
+	font-size: 48px;
+	margin: 32px 0;
+}
+.auction__bottom-bet {
+	background-color: #EDEDF2;
+	border-radius: 40px;
+	padding: 32px;
+	margin-right: 32px;
+	/* width: 296px; */
+}
+
+.auction__bottom-price {
+	font-size: 48px;
+}
+.auction__bottom-dollarprice {
+	color: #95959D;
+}
+.auction__bottom-timer {
+	display: flex;
+}
+.timer-auction {
+	width: 460px;
+	background-color: #07060B;
+	color: #fff;
+	padding: 32px;
+	height: 174px;
+	border-radius: 40px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.timer-auction__text {
+	margin-bottom: 16px;
+}
+.timer-auction__counter {
+	display: flex;
+}
+.timer-auction__units {
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	gap: 6px;
+}
+.timer-auction__units:not(:last-child) {
+	margin-right: 26px;
+}
+.timer-auction__numbers {
+	font-size: 48px;
+}
+.timer-auction__img {
+	width: 100px;
+	height: 100px;
+}
+.auction__bottom-btn {
+	margin-top: 32px;
+	cursor: pointer;
+	font-size: 20px;
+	
+}
+.auction__bottom-btn:hover {
+	background: linear-gradient(180deg, #46F4DB 27.08%, #57D272 100%);
+	animation: all .3s ease;
+}
+/* ------OTHER-AUCTIONS-------------------------------- */
+.other-auction {
+	margin-bottom: 90px;
+}
+.other-auction__title {
+	font-family: "Russo One", sans-serif;
+	font-weight: 400;
+}
+.other-auction__inner {
+	margin: 32px 0;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 32px;
+}
+.other-auction__card {
+	background-color: #EDEDF2;
+	border-radius: 40px;
+	overflow: hidden;
+}
+.other-auction__img {
+	display: block;
+	margin: 7px auto;
+	padding: 0 7px;
+}
+.other-auction__info {
+	background-color: #07060B;
+	padding: 20px 16px;
+	
+}
+.other-auction__user {
+	display: flex;
+	gap: 8px;
+	margin-bottom: 16px;
+}
+.other-auction__username {
+	font-size: 16px;
+	color: #fff;
+}
+.other-auction__text:not(:last-child) {
+	margin-bottom: 12px;
+}
+.other-auction__text_name {
+	color: #fff;
+}
+.other-auction__text_price {
+	color: var(--primary-color);
+}
+.other-auction__text_time {
+	color: #95959D;
+	font-size: 16px;
+}
+.other-auction__allauctions-link {
+	max-width: 296px;
+	text-align: center;
+	border: 5px solid var(--primary-color);
+	margin: 0 auto;
+	display: block;
+	overflow: hidden;
+}
+.other-auction__allauctions-link:hover {
+	background-color: var(--primary-color);
+}
+/* -------------------------------------- */
+/* -------------------------------------- */
+/* -------------------------------------- */
+/* -------------------------------------- */
